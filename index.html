@@ -15,8 +15,8 @@
     <div class="topnav">
         <a class="active" href="#">Pizzaria</a>
         <div class="topnav-right">
-         <a href="#viewblock">View Menu</a>
-         <a href="#addTopings">Add Menu</a>
+         <a onclick="getmenu()" href="#viewblock">View Menu</a>
+         <a onclick="add_item()" href="#addTopings">Add Menu</a>
         </div>
     </div>
 
@@ -25,6 +25,7 @@
             <img class="img-responsive"  src="images/pizza.png">
         </div>
       <!-- Add menu_div here and create button to call getmenu() -->
+      <div class=menu_list id=display_menu></div>
     </div>
     
     <div class="newRow" id="addTopings">
@@ -35,6 +36,7 @@
         
     </div>
      <!-- Add display_addedmenu div here! -->
+     <div class=menu_list id=display_addmenu></div>
     <div>
         <img class="img-responsive"  src="images/topping.png">
     </div>
